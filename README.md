@@ -1,49 +1,65 @@
 # Scratch XML Injector — Wiki
 
-Official documentation site for the [Scratch XML Injector](https://scratch.mit.edu) userscript (v6.3).
+This is the documentation wiki for the Scratch XML Injector v7.0 userscript. Open https://lookmartes.github.io/injector-scratch-wiki/ in your browser to get started.
 
-## Live Site
+---
 
-Once deployed: `https://YOUR-USERNAME.github.io/scratch-xml-wiki/`
+## Pages
 
-## Contents
+### Getting Started
+**`docs/getting-started.html`**
+How to install the script via Tampermonkey, where to use it, and how to do your first injection. Start here if you're new.
 
-| Page | Description |
-|------|-------------|
-| `index.html` | Landing page with feature overview and quick-start |
-| `docs/getting-started.html` | Installation and first injection |
-| `docs/blocks-xml.html` | Blockly XML format reference |
-| `docs/opcodes.html` | Complete opcode reference (Events, Motion, Control, Sensing, Operators, Looks, Variables) |
-| `docs/inputs-fields.html` | Number, string, boolean, dropdown, reporter inputs |
-| `docs/project-xml.html` | Project XML format — building full projects |
-| `docs/costumes.html` | Auto-generated circle and rectangle costume shapes |
-| `docs/examples.html` | Copy-pasteable XML examples |
-| `docs/troubleshooting.html` | Common errors and fixes |
-| `docs/hosting.html` | Deploying this wiki to GitHub Pages |
+### What's New in v7.0
+**`docs/whats-new.html`**
+Full changelog — all 4 inject modes, 2 export modes, the Script copy tab, and everything that changed from v6.3.
 
-## Hosting on GitHub Pages
+### Inject Modes
+**`docs/inject-modes.html`**
+Deep reference for all 4 inject modes: New Project, Add to Project, Replace Blocks, and Append Blocks. Covers when to use each one and what XML format each expects.
 
-1. Fork or upload this repository to GitHub (must be **public**)
-2. Go to **Settings → Pages**
-3. Set source to **Deploy from a branch** → `main` → `/ (root)`
-4. Click **Save**
-5. Your site goes live at `https://YOUR-USERNAME.github.io/REPO-NAME/` in ~60 seconds
+### Export Modes
+**`docs/export-modes.html`**
+How to use Grab Sprite XML and Grab Project XML — including how the exported XML can be re-injected for a round-trip edit workflow.
 
-## Local Development
+### Blocks XML Format
+**`docs/blocks-xml.html`**
+The `<xml>` format used for Replace Blocks and Append Blocks modes. Covers block structure, nesting, inputs, fields, shadows, and next chains.
 
-No build tools required — open `index.html` directly in a browser, or use any static file server:
+### Project XML Format
+**`docs/project-xml.html`**
+The `<project>` format used for New Project and Add to Project modes. Covers sprite definitions, costume shapes, and embedding blocks XML inside a project.
 
-```bash
-# Python 3
-python -m http.server 8080
+### Opcodes Reference
+**`docs/opcodes.html`**
+Full list of Scratch block opcodes — Events, Motion, Looks, Control, Sensing, Operators, Variables, and more.
 
-# Node (npx)
-npx serve .
-```
+### Inputs & Fields
+**`docs/inputs-fields.html`**
+How to write number inputs, text inputs, boolean conditions, dropdown menus, variable reporters, and broadcast options in XML.
 
-Then visit `http://localhost:8080`.
+### Costumes
+**`docs/costumes.html`**
+How auto-generated costumes work — circle and rectangle shapes, color, stroke, size, and dimension attributes.
 
-## License
+### Examples
+**`docs/examples.html`**
+Ready-to-paste XML examples: animations, movement, conditionals, full multi-sprite projects.
 
-Documentation is released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).  
-Scratch is a project of the MIT Media Lab.
+### Troubleshooting
+**`docs/troubleshooting.html`**
+Fixes for common errors: `FixedAsciiString`, `VM not found`, blank injections, missing variables, and more.
+
+### Copy Script
+**`docs/copy-script.html`**
+Three ways to copy and share the userscript without needing access to Tampermonkey's dashboard.
+
+---
+
+## Viewing locally
+
+No build tools needed — just open `index.html` directly in any browser. All pages are plain HTML with no dependencies or server required.
+
+---
+
+Scratch is a project of the MIT Media Lab. This wiki and script are unofficial and unaffiliated.
